@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF Widgets CDN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .code {
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 TF Widgets CDN</h1>
+        <p>Добро пожаловать в CDN для виджетов!</p>
+        
+        <h2>Доступные скрипты:</h2>
+        <ul>
+            <li><a href="/widget.js">widget.js</a> - Основной виджет</li>
+        </ul>
+        
+        <h2>Как использовать:</h2>
+        <div class="code">
+            &lt;script src="https://scripts.tf-widgets.com/widget.js"&gt;&lt;/script&gt;
+        </div>
+        
+        <p><small>Обновлено: <span id="date"></span></small></p>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleString('ru-RU');
+    </script>
+</body>
+</html>
