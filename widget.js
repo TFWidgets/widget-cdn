@@ -8,7 +8,7 @@
     return;
   }
 
-  fetch(`https://cdn.твойдомен.com/configs/${clientId}.json`)
+  fetch(`https://scripts.tf-widgets.com/configs/${clientId}.json`)
     .then(response => {
       if (!response.ok) throw new Error("Config not found");
       return response.json();
