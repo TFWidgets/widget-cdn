@@ -1,5 +1,6 @@
 (function() {
   // Получаем ID из тега <script>
+  console.log("work");
   const scriptTag = document.currentScript;
   const clientId = scriptTag.getAttribute('data-id');
 
