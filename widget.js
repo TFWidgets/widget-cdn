@@ -1,5 +1,4 @@
 (function() {
-  // Получаем ID из тега <script>
   console.log("work");
   const scriptTag = document.currentScript;
   const clientId = scriptTag.getAttribute('data-id');
@@ -9,14 +8,12 @@
     return;
   }
 
-  // Загружаем конфиг клиента
   fetch(`https://cdn.твойдомен.com/configs/${clientId}.json`)
     .then(response => {
       if (!response.ok) throw new Error("Config not found");
       return response.json();
     })
     .then(config => {
-      // Здесь логика отрисовки виджета
       const widget = document.createElement("div");
       widget.innerHTML = `
         <div style="padding:10px; background:${config.bgColor}; color:${config.textColor}">
